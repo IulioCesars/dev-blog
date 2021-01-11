@@ -1,15 +1,17 @@
+import { Configuration } from "../Configuration";
 
-export declare type PageType = 'SearchByTag' | 'PostView' | 'Local' | 'Assets'
+export declare type PageType = 'SearchByTag' | 'PostView' | 'BaseURL' | 'Assets'
 
 
 export class PageURL {
+
     static getURL(page: PageType, ...args: string[]): string
     {
         const routes = {
             "SearchByTag": "",
             "PostView": "posts",
-            "Local": window.location.origin,
-            "Assets": `${window.location.origin}/assets`
+            "BaseURL": process.env.PUBLIC_URL,
+            "Assets": `${process.env.PUBLIC_URL}/assets`
         }
 
         let pageRoute = routes[page];

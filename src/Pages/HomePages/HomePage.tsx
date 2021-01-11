@@ -5,13 +5,14 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { PostsPage } from '../PostsPage/PostsPage';
 import { PostView } from '../PostView/PostView';
 import { ListPostProvider } from '../../Context/ListPostContext';
+import { PageURL } from '../PagesURL';
   
 
 export function HomePage() : JSX.Element {
 
     return(
         <>
-            <BrowserRouter>
+            <BrowserRouter basename={PageURL.getURL("BaseURL")} >
                 <Navbar/>
                 <ListPostProvider>
                     <div id="app" className="container p-2">

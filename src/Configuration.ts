@@ -1,7 +1,12 @@
 import { PageConfiguration } from "./Models/PageConfiguration";
 import moment from 'moment';
+import { env } from "process";
 
 export class Configuration {
+    public static PageURL(): string {
+        return "https://iuliocesars.github.io/dev-blog";
+    }
+
     public static GetDateInDefaultFormat(date: Date) {
         return moment(date).format("DD/MM/yyyy");
     }

@@ -1,8 +1,8 @@
 {
+  "homepage": "http://iuliocesars.github.io/dev-blog",
   "name": "dev-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://iuliocesars.github.io/dev-blog",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
