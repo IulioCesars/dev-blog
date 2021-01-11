@@ -1,0 +1,23 @@
+.card-image {
+    height: 100%;
+    min-height: 150px;
+}
+
+.card {
+    min-height: 200px;
+}
+
+.card-description {
+    display: -webkit-box;   
+    -webkit-line-clamp: 4;   
+    -webkit-box-orient: vertical;   
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 100px;
+    text-align: justify;
+}
+
+.card-description-desktop {
+    height: 100px;
+}
